@@ -1,0 +1,68 @@
+/* --- Light & Modern Theme --- */
+
+.home {
+  padding: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-form {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc; /* Changed from none to a light border */
+  border-radius: 4px;
+  background-color: #fff; /* Changed from dark grey to white */
+  color: #333; /* Changed from white to dark grey */
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s; /* Added transition */
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007bff; /* Changed focus color to blue */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Changed shadow to a blue glow */
+}
+
+.search-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff; /* Changed from red to blue */
+  color: white;
+  border: none; /* Explicitly set border to none */
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+  cursor: pointer; /* Added for better UX */
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Darker blue for hover */
+}
+
+@media (max-width: 639px) {
+  .home {
+    padding: 1rem 0;
+  }
+
+  .search-form {
+    margin-bottom: 1rem;
+  }
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
